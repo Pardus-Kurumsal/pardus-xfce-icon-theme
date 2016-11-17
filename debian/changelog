@@ -1,3 +1,9 @@
+pardus-xfce-icon-theme (0.4) pardus; urgency=medium
+
+  * Update Makefile
+
+ -- Yusuf Düzgün <yusuf.duzgun@pardus.org.tr>  Thu, 17 Nov 2016 12:19:26 +0300
+
 pardus-xfce-icon-theme (0.3) pardus; urgency=medium
 
   * update debian/control depends
