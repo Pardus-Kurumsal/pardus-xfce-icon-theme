@@ -2,14 +2,14 @@ Source: pardus-xfce-icon-theme
 Section: xfce
 Priority: extra
 Maintainer: Yusuf Düzgün <yusuf.duzgun@pardus.org.tr>
-Build-Depends: debhelper (>=9)
+Build-Depends: debhelper (>=9), gtk-update-icon-cache (>=3.22.3-2)
 Standards-Version: 3.9.7
 Homepage: http://pardus.org.tr
 
 Package: pardus-xfce-icon-theme
 Architecture: any
 Multi-Arch: foreign
-Depends: gtk-update-icon-cache
+Depends: ${misc:Depends}
 Description: Pardus Xfce Icon Theme for Pardus XFCE desktop environment
  Pardus xfce icon theme package have 2 icon theme set.
  "pardus-xfce-icon-theme" for normal(white) panel.
