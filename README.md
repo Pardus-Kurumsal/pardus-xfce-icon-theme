@@ -22,69 +22,61 @@ cd pardus-xfce-icon-theme
 debmake -n -u 0.1(_Version_)
 ```
 
-**Edit debian/* files**
+** "debmake" command created debian files. **
+** We must control and edit all debian files. **
 
-**_debian/copyright_**
+
+Now, install necessary packages for countine packaging.
 ```
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: Planet Venus
-Upstream-Contact: John Doe <jdoe@example.com>
-Source: http://www.example.com/code/venus
-
-Files: debian/patches/theme-diveintomark.patch
-Copyright: 2008, Joe Hacker <hack@example.org>
-License: GPL-2+
- [LICENSE TEXT]
-
-Files: planet/vendor/htmltmpl.py
-Copyright: 2004, Thomas Brown <coder@example.org>
-License: GPL-2+
- This program is free software; you can redistribute it
- and/or modify it under the terms of the GNU General Public
- License as published by the Free Software Foundation; either
- version 2 of the License, or (at your option) any later
- version.
- .
- This program is distributed in the hope that it will be
- useful, but WITHOUT ANY WARRANTY; without even the implied
- warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
- PURPOSE.  See the GNU General Public License for more
- details.
- .
- You should have received a copy of the GNU General Public
- License along with this package; if not, write to the Free
- Software Foundation, Inc., 51 Franklin St, Fifth Floor,
- Boston, MA  02110-1301 USA
- .
- On Debian systems, the full text of the GNU General Public
- License version 2 can be found in the file
- `/usr/share/common-licenses/GPL-2'.
+sudo apt-get install git-buildpackage rsync
 ```
 
-**_debian/changelog_**
+go package folder
 ```
-pardus-xfce-icon-theme (0.1) pardus; urgency=low
-
-  * Initial release.
-
- -- Yusuf Düzgün <yusuf.duzgun@pardus.org.tr>  Wed, 16 Nov 2016 17:32:57 +0300
+cd pardus-xfce-icon-theme
+touch .drone.yml
 ```
-**_debian/control_**
-```
-Source: pardus-xfce-icon-theme
-Section: xfce
-Priority: extra
-Maintainer: Yusuf Düzgün <yusuf.duzgun@pardus.org.tr>
-Build-Depends: debhelper (>=9)
-Standards-Version: 3.9.7
-Homepage: http://pardus.org.tr
 
-Package: pardus-xfce-icon-theme
-Architecture: any
-Multi-Arch: foreign
-Depends: 
-Description: Pardus Xfce Icon Theme for Pardus XFCE desktop environment
- Pardus xfce icon theme package have 2 icon theme set.
- "pardus-xfce-icon-theme" for normal(white) panel.
- "pardus-xfce-icon-theme-dark" for dark(black) panel.
+copy paste .drone.yml
+```
+build:
+  package:
+    image: pardus/pardus-package
+    volumes:
+      - /tmp/packages:/packages
+    commands:
+      - echo "TODO lintian -i /packages/$(basename $DRONE_REPO)/*.changes"
+      - apt-get update
+      - apt-get install build-essential equivs devscripts
+      - mkdir -p build-area
+      - cd build-area
+      - dpkg-source -x /packages/$(basename $DRONE_REPO)/*.dsc build-$(basename $DRONE_REPO)
+      - cd build-$(basename $DRONE_REPO)
+      - mk-build-deps -i -r
+      - dpkg-buildpackage -b -uc
+      - cd ..
+      - cp  -vt /packages/$(basename $DRONE_REPO) *.udeb *.deb *.changes 2>/dev/null || true
+  test:
+    image: pardus/pardus-test
+    volumes:
+      - /tmp/packages:/packages
+    commands:
+      - apt-get update
+      - apt-get install /packages/$(basename $DRONE_REPO)/*.deb
+  deploy:
+    image: pardus/pardus-test
+    volumes:
+      - /tmp/packages:/packages
+    commands:
+      - apt-get update
+      - echo "TODO deployment container (pardus/pardus-deploy) is yet to be prepared"
+      - ls -al /packages/$(basename $DRONE_REPO)
+      - echo "deployment commands go here"
+branches:
+  - master
+```
+
+Make debian ignore '.drone.yml'
+```
+echo 'extend-diff-ignore = ".drone.yml"' >> debian/source/local-options
 ```
