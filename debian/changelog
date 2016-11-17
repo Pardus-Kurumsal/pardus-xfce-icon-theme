@@ -1,3 +1,9 @@
+pardus-xfce-icon-theme (0.3) pardus; urgency=medium
+
+  * update debian/control depends
+
+ -- Yusuf Düzgün <yusuf.duzgun@pardus.org.tr>  Thu, 17 Nov 2016 11:46:22 +0300
+
 pardus-xfce-icon-theme (0.2) pardus; urgency=medium
 
   * Update changelog for 0.1 release
