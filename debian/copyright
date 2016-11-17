@@ -4,15 +4,18 @@ Upstream-Contact: Yusuf Düzgün <yusuf.duzgun@pardus.org.tr>
 Source: http://pardus.org.tr
 
 Files: pardus-xfce-icon-theme/*
-       pardus-xfce-icon-theme-dark//
+       pardus-xfce-icon-theme-dark/*
 Copyright: Daniel Foré <daniel@elementaryos.org>
-License: GPL-2+
+License: GPL-2
  [LICENSE TEXT]
 
 Files: debian/*
        Makefile
+       .drone.yml
+       LICENSE
+       README.md
 Copyright: Yusuf Düzgün <yusuf.duzgun@pardus.org.tr>
-License: GPL-2+
+License: GPL-2
  This program is free software; you can redistribute it
  and/or modify it under the terms of the GNU General Public
  License as published by the Free Software Foundation; either
