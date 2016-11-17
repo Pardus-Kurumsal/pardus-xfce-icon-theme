@@ -9,7 +9,7 @@ Homepage: http://pardus.org.tr
 Package: pardus-xfce-icon-theme
 Architecture: any
 Multi-Arch: foreign
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends:
 Description: Pardus Xfce Icon Theme for Pardus XFCE desktop environment
  Pardus xfce icon theme package have 2 icon theme set.
  "pardus-xfce-icon-theme" for normal(white) panel.
