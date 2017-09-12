@@ -1,3 +1,11 @@
+pardus-xfce-icon-theme (1.0) onyedi; urgency=medium
+
+  * Update default icon theme set and bump the version
+  * Update control file
+  * Update Makefile
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Tue, 12 Sep 2017 17:13:51 +0300
+
 pardus-xfce-icon-theme (0.8) pardus; urgency=medium
 
   * Fix some icon visibility issues and add new ones
