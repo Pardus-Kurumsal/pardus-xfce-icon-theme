@@ -5,6 +5,7 @@ Source: http://pardus.org.tr
 
 Files: pardus-xfce-icon-theme/*
        pardus-xfce-icon-theme-dark/*
+       pardus-xfce-icon-theme-darker/*
 Copyright: Daniel Foré <daniel@elementaryos.org>
 License: GPL-2
  [LICENSE TEXT]
