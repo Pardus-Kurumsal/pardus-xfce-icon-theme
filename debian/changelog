@@ -1,3 +1,10 @@
+pardus-xfce-icon-theme (1.1) onyedi; urgency=medium
+
+  * Add darker icon theme
+  * Update copyright
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Mon, 18 Sep 2017 09:25:50 +0300
+
 pardus-xfce-icon-theme (1.0) onyedi; urgency=medium
 
   * Update default icon theme set and bump the version
