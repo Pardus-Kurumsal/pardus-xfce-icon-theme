@@ -11,5 +11,5 @@ Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
 Description: Pardus Xfce Icon Theme for Pardus XFCE desktop environment
- Pardus xfce icon theme package provides icon theme set.
+ Pardus xfce icon theme package provides two icon theme sets.
  "pardus-xfce-icon-theme-dark" as default.
