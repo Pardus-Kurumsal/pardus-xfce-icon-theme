@@ -9,11 +9,11 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="64"
-   width="64"
+   height="16"
+   width="16"
    version="1"
    id="svg12"
-   sodipodi:docname="64x64.svg"
+   sodipodi:docname="16x16.svg"
    inkscape:version="0.92.1 r15371">
   <metadata
      id="metadata18">
@@ -347,16 +347,16 @@
      inkscape:window-height="1138"
      id="namedview14"
      showgrid="false"
-     inkscape:zoom="10.429825"
-     inkscape:cx="21.601804"
-     inkscape:cy="28.535989"
+     inkscape:zoom="20.85965"
+     inkscape:cx="8.4532925"
+     inkscape:cy="14.939472"
      inkscape:window-x="1920"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg12" />
   <g
      id="g4782"
-     transform="matrix(0.25,0,0,0.25000528,-0.2,57.999916)">
+     transform="matrix(0.0625,0,0,0.06250132,-0.05,14.499979)">
     <g
        id="g4497"
        transform="matrix(4.2857143,0,0,4.2857059,-9.1428572,-241.99953)">
@@ -554,12 +554,12 @@
           <polygon
              style="fill:#ffcb08;fill-opacity:1"
              ns2:knockout="Off"
-             points="202.927,198.549 225.85,234.284 248.776,190.457 218.433,178.322 "
+             points="248.776,190.457 218.433,178.322 202.927,198.549 225.85,234.284 "
              id="polygon5084" />
           <polygon
              style="fill:#ffcb08;fill-opacity:1"
              ns2:knockout="Off"
-             points="393.074,198.549 370.148,234.284 347.224,190.457 377.565,178.322 "
+             points="347.224,190.457 377.565,178.322 393.074,198.549 370.148,234.284 "
              id="polygon5086" />
         </g>
         <path
@@ -879,12 +879,12 @@
          style="fill:#2c2c2c;fill-opacity:1" />
       <polygon
          class="st5"
-         points="1415.7,419.4 1414.1,419.8 1411.9,421.6 "
+         points="1414.1,419.8 1411.9,421.6 1415.7,419.4 "
          id="polygon5942"
          style="fill:#2c2c2c;fill-opacity:1" />
       <polygon
          class="st5"
-         points="1464.9,397 1474,391.3 1473.2,391.4 "
+         points="1474,391.3 1473.2,391.4 1464.9,397 "
          id="polygon5944"
          style="fill:#2c2c2c;fill-opacity:1" />
       <path
@@ -974,12 +974,12 @@
          style="fill:#2c2c2c;fill-opacity:1" />
       <polygon
          class="st5"
-         points="1393.2,385.4 1391.4,385.6 1389.4,387.5 "
+         points="1391.4,385.6 1389.4,387.5 1393.2,385.4 "
          id="polygon5876"
          style="fill:#2c2c2c;fill-opacity:1" />
       <polygon
          class="st5"
-         points="1440.5,365.2 1449.2,359.8 1448.5,359.8 "
+         points="1449.2,359.8 1448.5,359.8 1440.5,365.2 "
          id="polygon5878"
          style="fill:#2c2c2c;fill-opacity:1" />
       <path
@@ -1049,12 +1049,12 @@
          style="fill:#2c2c2c;fill-opacity:1" />
       <polygon
          class="st5"
-         points="1443.9,452.8 1442,454.4 1445.5,452.7 "
+         points="1442,454.4 1445.5,452.7 1443.9,452.8 "
          id="polygon5902"
          style="fill:#2c2c2c;fill-opacity:1" />
       <polygon
          class="st5"
-         points="1498.7,430.8 1498.1,430.9 1490.5,435.6 "
+         points="1498.1,430.9 1490.5,435.6 1498.7,430.8 "
          id="polygon5904"
          style="fill:#2c2c2c;fill-opacity:1" />
       <path
